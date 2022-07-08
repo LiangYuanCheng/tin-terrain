@@ -246,6 +246,10 @@ target_link_libraries(tin-terrain
     tntn
 )
 
+install(TARGETS ${PROJECT_NAME}
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib)
+
 if(TNTN_TEST)
     add_subdirectory(test)
 endif()
